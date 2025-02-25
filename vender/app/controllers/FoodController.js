@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js"
+import { foodService } from "../services/FoodService.js"
 
 export class FoodController {
   constructor() {
@@ -15,6 +16,8 @@ export class FoodController {
   }
 
   drawWallet() {
+    foodService.getMoney()
+
     document.getElementById('wallet').innerText = `Wallet: ${AppState.wallet}`
   }
 
