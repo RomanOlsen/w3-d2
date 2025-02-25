@@ -3,8 +3,9 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
 
-  /**@type {import('./models/Example.js').Example[]} */
-  examples = []
+  menu = [
+
+  ]
 }
 
 export const AppState = createObservableProxy(new ObservableAppState())

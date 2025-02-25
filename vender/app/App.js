@@ -1,11 +1,11 @@
-import { ExampleController } from './controllers/ExampleController.js';
+import { FoodController } from './controllers/FoodController.js';
 
 class App {
 
-  ExampleController = new ExampleController() // ☑️ you can remove this - example only
+  foodController = new FoodController // ☑️ you can remove this - example only
 
 }
 
-window['app'] = new App()
+window['app'] = new App() // this allows us access from browser console
 
 
