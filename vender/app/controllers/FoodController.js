@@ -14,4 +14,8 @@ export class FoodController {
     document.getElementById('menu').innerHTML = content
   }
 
+  drawWallet() {
+    document.getElementById('wallet').innerText = `Wallet: ${AppState.wallet}`
+  }
+
 }

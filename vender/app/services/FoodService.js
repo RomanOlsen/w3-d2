@@ -1,10 +1,14 @@
 import { AppState } from "../AppState.js";
+import { FoodController } from "../controllers/FoodController.js";
 
-export class FoodService {
+new class FoodService {
 
+  getMoney() {
+    AppState.wallet++
+    console.log(AppState.wallet)
+
+    FoodController.drawWallet()
+    new FoodController
+  }
 }
 
-getMoney() {
-  AppState.wallet++
-  console.log(AppState.wallet)
-}
