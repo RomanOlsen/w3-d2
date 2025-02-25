@@ -18,7 +18,7 @@ export class Food {
     return `        <div class="col-4">
           <div class="card shadow mb-4">
             <div class="card-header">${this.name} ${this.emoji}</div>
-            <div class="card-body d-flex justify-content-between align-items-center">${this.price} coins
+            <div class="card-body d-flex justify-content-between align-items-center">${this.price} bitcoins
               <button class="btn btn-primary text-white">Buy</button>
             </div>
           </div>

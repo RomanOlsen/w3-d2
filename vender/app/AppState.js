@@ -4,6 +4,8 @@ import { createObservableProxy } from './utils/ObservableProxy.js'
 
 class ObservableAppState extends EventEmitter {
 
+  wallet = 0
+
   menu = [
     new Food('Eggs', 2, '🍳', 1),
     new Food('Sausage', 4, '🌭', 1),
