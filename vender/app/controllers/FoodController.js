@@ -17,8 +17,11 @@ export class FoodController {
 
   drawWallet() {
     foodService.getMoney()
-
     document.getElementById('wallet').innerText = `Wallet: ${AppState.wallet}`
+  }
+
+  drawPurchase(foodName) {
+    foodService.buyFood(foodName)
   }
 
 }

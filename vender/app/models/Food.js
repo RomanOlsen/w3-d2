@@ -19,7 +19,7 @@ export class Food {
           <div class="card shadow mb-4">
             <div class="card-header">${this.name} ${this.emoji}</div>
             <div class="card-body d-flex justify-content-between align-items-center">${this.price} bitcoins
-              <button class="btn btn-primary text-white">Buy</button>
+              <button onclick=app.foodController.drawPurchase('${this.name}') class="btn btn-primary text-white">Buy</button>
             </div>
           </div>
         </div>`
